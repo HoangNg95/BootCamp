@@ -20,7 +20,7 @@ public class baseclass {
 	 @BeforeTest (alwaysRun=true)
 	  
 	  public void beforeTest() {
-			browsers("chrome");
+			browsers("edge");
 			    driver.get("https://www.expedia.com");
 			    driver.manage().window().maximize();
 			    driver.manage().deleteAllCookies();

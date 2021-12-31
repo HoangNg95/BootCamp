@@ -21,9 +21,11 @@ public class test extends baseclass{
 		xp.confirm();
 		Thread.sleep(3000);
 		xp.submit();
+		//after this point script becomes unreliable due to expedia human check (CAPTCHA)
 		chooseflight fl = new chooseflight(driver);
 		fl.flight();
 		fl.select();
+		Thread.sleep(15000);
 		fl.flight();
 		fl.select();
 		newtab nt = new newtab(driver);

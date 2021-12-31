@@ -3,6 +3,7 @@ package Pages;
 import java.util.Iterator;
 import java.util.Set;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -32,7 +33,9 @@ public static WebDriver driver;
 	driver.switchTo().window(win2);
 }
 	
-	public void checkout() {
-		checkout.click();
+	public void checkout() throws InterruptedException {
+		Thread.sleep(5000);
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("arguments[0].click()", checkout);
 	}
 }

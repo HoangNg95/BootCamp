@@ -2,38 +2,40 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-12-31T00:09:01 EST" name="Default suite" finished-at="2021-12-31T00:09:38 EST" duration-ms="37228">
+  <suite started-at="2021-12-31T13:33:34 EST" name="Default suite" finished-at="2021-12-31T13:34:57 EST" duration-ms="83221">
     <groups>
     </groups>
-    <test started-at="2021-12-31T00:09:01 EST" name="Default test" finished-at="2021-12-31T00:09:38 EST" duration-ms="37228">
+    <test started-at="2021-12-31T13:33:34 EST" name="Default test" finished-at="2021-12-31T13:34:57 EST" duration-ms="83221">
       <class name="regression.test">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:regression.test@1ea9f6af]" started-at="2021-12-31T00:09:01 EST" name="beforeTest" finished-at="2021-12-31T00:09:10 EST" duration-ms="9418" status="PASS">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:regression.test@50eac852]" started-at="2021-12-31T13:33:34 EST" name="beforeTest" finished-at="2021-12-31T13:33:44 EST" duration-ms="10120" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method signature="f()[pri:1, instance:regression.test@1ea9f6af]" started-at="2021-12-31T00:09:10 EST" name="f" finished-at="2021-12-31T00:09:38 EST" duration-ms="27751" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchWindowException">
+        <test-method signature="f()[pri:1, instance:regression.test@50eac852]" started-at="2021-12-31T13:33:44 EST" name="f" finished-at="2021-12-31T13:34:57 EST" duration-ms="73072" status="FAIL">
+          <exception class="org.openqa.selenium.InvalidSelectorException">
             <message>
-              <![CDATA[no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=96.0.4664.110)
+              <![CDATA[invalid selector: Unable to locate an element with the xpath expression //*[@id='gender_male[0]']'] because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//*[@id='gender_male[0]']']' is not a valid XPath expression.
+  (Session info: MicrosoftEdge=96.0.1054.62)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
 Build info: version: '4.1.1', revision: 'e8fcc2cecf'
 System info: host: 'FX505', ip: '192.168.245.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [87fd1127e6234bf3281a165b08669b39, findElement {using=xpath, value=//*[@class='uitk-card-link'][1]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 95.0.4638.17 (a9d0719444d4b..., userDataDir: C:\Users\hoang\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63191}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63191/devtoo..., se:cdpVersion: 96.0.4664.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 87fd1127e6234bf3281a165b08669b39]]>
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [66e7f522b6092dbda2cd03a92f01865e, findElement {using=xpath, value=//*[@id='gender_male[0]']']}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 96.0.1054.62, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:59307}, msedge: {msedgedriverVersion: 96.0.1054.29 (246a8e9ebf93f..., userDataDir: C:\Users\hoang\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59307/devtoo..., se:cdpVersion: 96.0.1054.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 66e7f522b6092dbda2cd03a92f01865e]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=96.0.4664.110)
+              <![CDATA[org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression //*[@id='gender_male[0]']'] because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//*[@id='gender_male[0]']']' is not a valid XPath expression.
+  (Session info: MicrosoftEdge=96.0.1054.62)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
 Build info: version: '4.1.1', revision: 'e8fcc2cecf'
 System info: host: 'FX505', ip: '192.168.245.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [87fd1127e6234bf3281a165b08669b39, findElement {using=xpath, value=//*[@class='uitk-card-link'][1]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 95.0.4638.17 (a9d0719444d4b..., userDataDir: C:\Users\hoang\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63191}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63191/devtoo..., se:cdpVersion: 96.0.4664.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 87fd1127e6234bf3281a165b08669b39
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [66e7f522b6092dbda2cd03a92f01865e, findElement {using=xpath, value=//*[@id='gender_male[0]']']}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 96.0.1054.62, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:59307}, msedge: {msedgedriverVersion: 96.0.1054.29 (246a8e9ebf93f..., userDataDir: C:\Users\hoang\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59307/devtoo..., se:cdpVersion: 96.0.1054.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 66e7f522b6092dbda2cd03a92f01865e
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -53,8 +55,8 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:3
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
 at com.sun.proxy.$Proxy16.click(Unknown Source)
-at Pages.chooseflight.flight(chooseflight.java:26)
-at regression.test.f(test.java:25)
+at Pages.passenger.male(passenger.java:42)
+at regression.test.f(test.java:38)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -85,11 +87,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+          </exception> <!-- org.openqa.selenium.InvalidSelectorException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- f -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:regression.test@1ea9f6af]" started-at="2021-12-31T00:09:38 EST" name="afterTest" finished-at="2021-12-31T00:09:38 EST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:regression.test@50eac852]" started-at="2021-12-31T13:34:57 EST" name="afterTest" finished-at="2021-12-31T13:34:57 EST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->

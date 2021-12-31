@@ -12,7 +12,7 @@ public class passenger {
 		@FindBy (xpath="//*[@id='firstname[0]']") WebElement firstname;
 		@FindBy (xpath="//*[@id='lastname[0]']") WebElement lastname;
 		@FindBy (xpath="//*[@id='phone-number[0]']") WebElement phone;
-		@FindBy (xpath="//*[@id='gender_male[0]']']") WebElement male;
+		@FindBy (xpath="//*[@id='gender_male[0]']") WebElement male;
 		@FindBy (xpath="//*[@data-tealeaf-name='date_of_birth_month[0]']") WebElement dobmo;
 		@FindBy (xpath="//*[@data-tealeaf-name='date_of_birth_day[0]']") WebElement dobday;
 		@FindBy (xpath="//*[@data-tealeaf-name='date_of_birth_day[0]']") WebElement dobyear;
